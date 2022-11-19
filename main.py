@@ -1,4 +1,3 @@
-
 p = 0
 q = 0
 cipher = "!#@ abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890"
@@ -61,16 +60,17 @@ while run:
             input("press enter")
 
         if "-de" in word:
-            encrypted_text = input("ENeter En Text: ")
+            encrypted_text = input("Enter En Text: ")
             plain_text = ""
-            for s in encrypted_text:
-                m = 0
-                for l in cipher:
-                    if s == l:
-                        if s == (str((m ** public_key) % n)):
-                            plain_text = plain_text + s
-                        break
-                    m += 1
+            for s in encrypted_text.split(" "):
+                for k in cipher:
+                    m = 0
+                    for l in cipher:
+                        if k == l:
+                            if s == (str((m ** public_key) % n)):
+                                plain_text = plain_text + l
+                            break
+                        m += 1
             print("PT: " ,plain_text)
             input("Press Enter")
 
