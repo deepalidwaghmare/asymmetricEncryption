@@ -45,7 +45,7 @@ while run:
             start = False
 
         if "-en" in word:
-            plain_text = input("ENter PT")
+            plain_text = input("Enter your plain Text: ")
             encrypted_text =""
             for k in plain_text:
                 m = 0
