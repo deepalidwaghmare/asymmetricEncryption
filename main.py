@@ -10,7 +10,7 @@ key_number = 1
 run = True
 
 while run:
-    p, q = input("Two numbers separated by colun it should be prime no:\n#>").split(" ")
+    p, q = input("Two numbers separated by column it should be prime no:\n#>").split(" ")
     p = int(p)
     q = int(q)
     n = p * q
