@@ -33,18 +33,18 @@ while run:
         print("p=", p)
         print("q=", q)
         print("modulo=", n)
-        print("publick key", public_key)
+        print("public key", public_key)
         print("secret key", secret_key)
         print("Commands")
-        print("-en")
-        print("-de")
+        print("En")
+        print("De")
         print("exit")
         word = input("#>")
 
         if "-exit" in word:
             start = False
 
-        if "-en" in word:
+        if "En" in word:
             plain_text = input("Please enter your plain Text: ")
             encrypted_text =""
             for k in plain_text:
@@ -59,7 +59,7 @@ while run:
             print("encrypted Text: " , encrypted_text)
             input("press enter")
 
-        if "-de" in word:
+        if "De" in word:
             encrypted_text = input("Enter En Text: ")
             plain_text = ""
             for s in encrypted_text.split(" "):
