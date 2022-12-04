@@ -36,15 +36,15 @@ while run:
         print("public key", public_key)
         print("secret key", secret_key)
         print("Commands")
-        print("En")
-        print("De")
-        print("exit")
+        print("-En")
+        print("-De")
+        print("-Exit")
         word = input("#>")
 
-        if "-exit" in word:
+        if "-Exit" in word:
             start = False
 
-        if "En" in word:
+        if "-En" in word:
             plain_text = input("Please enter your plain Text: ")
             encrypted_text =""
             for k in plain_text:
@@ -59,7 +59,7 @@ while run:
             print("encrypted Text: " , encrypted_text)
             input("press enter")
 
-        if "De" in word:
+        if "-De" in word:
             encrypted_text = input("Enter En Text: ")
             plain_text = ""
             for s in encrypted_text.split(" "):
@@ -74,5 +74,5 @@ while run:
             print("PT: " ,plain_text)
             input("Press Enter")
 
-        if "-exit" in word:
+        if "-Exit" in word:
             run = False
